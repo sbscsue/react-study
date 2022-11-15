@@ -4,6 +4,8 @@ import { OBJECTIVE,MULTIPLE,TRUEFALSE,STAR } from '../reducer/format';
 
 import ObjectMake from '../../../component/surveyFormat/ObjectMake';
 import MultipleMake from '../../../component/surveyFormat/MultipleMake';
+import SurveyAgree from '../../../component/surveyFormat/AgreeMake';
+import SurveyRating from '../../../component/surveyFormat/RatingMake';
 
 function QuestionMakeList() {
     
@@ -18,9 +20,9 @@ function QuestionMakeList() {
                     case MULTIPLE:
                         return <MultipleMake id={r.id} title={r.title} response={r.response}/>
                     case TRUEFALSE:
-                        return <p> {r.id} {r.type}</p>
+                        return <SurveyAgree/>
                     case STAR:
-                        return <p> {r.id} {r.type}</p>
+                        return <SurveyRating/>
                 }
             }
         )
