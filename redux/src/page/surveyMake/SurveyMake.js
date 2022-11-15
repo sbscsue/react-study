@@ -39,7 +39,7 @@ function reducer(currentState=initialState,action){
             newState.question = [...newState.question,{id:newState.id+1,type:STAR}];
             newState.id++;
             return newState
-          
+    
         case UPDATE_TITLE:
             const i = newState.question.findIndex(r => r.id === action.id);
             newState.question[i].title = action.value;
