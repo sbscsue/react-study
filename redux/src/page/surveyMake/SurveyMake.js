@@ -1,13 +1,11 @@
-import {createStore} from "redux";
-import {composeWithDevTools} from 'redux-devtools-extension';
-
 import {Provider,useSelector,useDispatch,connect} from 'react-redux';
 
 import QuestionMakeList from "./component/QuestionMakeList";
 import QuestionResultList from "./component/QuestionResultList";
 
-import counter from "./reducer/action";
 import {CREATE_OBJECTIVE, CREATE_MULTIPLE,CREATE_TRUEFALSE,CREATE_STAR,DELETE } from "./reducer/action";
+
+import axios from 'axios';
 //style
 const tempStyle={
     display:"flex",
@@ -15,11 +13,19 @@ const tempStyle={
 
 
 
-const store = createStore(counter,composeWithDevTools());
-
 function SurveyMake() {
+  const selectorData = useSelector(state=>state.question);
+
+  const onClick = (e) =>{
+    console.log("?");
+    console.log(selectorData);
+    axios.post('/rest/create',selectorData);
+  }
+
+
     return ( 
-        <Provider store ={store}>
+        <div>
+            <button onClick={onClick}>send to was</button>
             <div> 
                 <PlusButton/>
                 <DeleteButton/>
@@ -28,7 +34,7 @@ function SurveyMake() {
                 <QuestionMakeList/>
                 <QuestionResultList/>
             </div>
-        </Provider>
+        </div>
      );
 }
 

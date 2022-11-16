@@ -13,7 +13,7 @@ const styles = {
 }
 
 
-function ObjectMake({id, title}) {
+function Make({id, title}) {
     const dispatch = useDispatch();
 
     const onChange = (e) => {
@@ -30,4 +30,4 @@ function ObjectMake({id, title}) {
     );
 }
 
-export default ObjectMake;
+export default Make;
