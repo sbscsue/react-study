@@ -4,7 +4,7 @@ import axios from 'axios';
 import {Provider} from 'react-redux';
 import { store } from "./redux/slice/SurveyMakeSlice";
 
-import SurveyMake from "./page/SurveyMake";
+import SurveyMake from "./pages/SurveyMake";
 
 
 //const store = createStore(surveyMakeSlice,composeWithDevTools());
