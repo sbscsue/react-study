@@ -1,10 +1,7 @@
-import {Provider,useSelector,useDispatch,connect} from 'react-redux';
-
-import QuestionMakeList from "./component/QuestionMakeList";
-import QuestionResultList from "./component/QuestionResultList";
-
+import {useSelector,useDispatch} from 'react-redux';
 import axios from 'axios';
-import {  CREATE_OBJECTIVE,
+
+import { CREATE_OBJECTIVE,
   CREATE_MULTIPLE,
   UPDATE_MULTIPLE_CANMULTI,
   UPDATE_MULTIPLE_CREATE_RESPONSE,
@@ -13,7 +10,15 @@ import {  CREATE_OBJECTIVE,
   CREATE_TRUEFALSE,
   CREATE_STAR,
   UPDATE_TITLE,
-  DELETE } from './reducer/action2';
+  DELETE }  from '../redux/slice/SurveyMakeSlice';
+
+
+import QuestionMakeList from '../component/Survey/QuestionMakeList';
+import QuestionResultList from '../component/Survey/QuestionResultList';
+  
+
+
+
 //style
 const tempStyle={
     display:"flex",

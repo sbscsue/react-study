@@ -1,10 +1,12 @@
 import {useSelector} from 'react-redux';
-import { OBJECTIVE,MULTIPLE,TRUEFALSE,STAR } from '../reducer/format';
 
-import ObjectResult from '../../../component/surveyFormat/ObjectResult';
-import MultipleResult from '../../../component/surveyFormat/MultipleResult';
-import TrueFalseResult from '../../../component/surveyFormat/TrueFalseResult';
-import RatingResult from '../../../component/surveyFormat/RatingResult';
+import { OBJECTIVE,MULTIPLE,TRUEFALSE,STAR } from '../../redux/slice/SurveyMakeSlice';
+
+import ObjectResult from './QuestionResultList/ObjectResult';
+import MultipleResult from './QuestionResultList/MultipleResult';
+import TrueFalseResult from './QuestionResultList/TrueFalseResult';
+import RatingResult from './QuestionResultList/RatingResult';
+
 
 
 

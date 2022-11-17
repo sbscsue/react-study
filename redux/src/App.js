@@ -1,12 +1,10 @@
-import SurveyMake from "./page/surveyMake/SurveyMake";
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
-import {createStore} from "redux";
-import {composeWithDevTools} from 'redux-devtools-extension';
-import {Provider,useSelector,useDispatch,connect} from 'react-redux';
-import reducer from "./page/surveyMake/reducer/action";
-import { store, surveyMakeSlice } from "./page/surveyMake/reducer/action2";
+import {Provider} from 'react-redux';
+import { store } from "./redux/slice/SurveyMakeSlice";
+
+import SurveyMake from "./page/SurveyMake";
 
 
 //const store = createStore(surveyMakeSlice,composeWithDevTools());

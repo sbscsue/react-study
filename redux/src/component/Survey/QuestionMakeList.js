@@ -1,9 +1,8 @@
 import {useSelector} from 'react-redux';
-import { OBJECTIVE,MULTIPLE,TRUEFALSE,STAR } from '../reducer/format';
+import { OBJECTIVE,MULTIPLE,TRUEFALSE,STAR } from '../../redux/slice/SurveyMakeSlice';
 
-
-import Make from '../../../component/surveyFormat/Make';
-import MultipleMake from '../../../component/surveyFormat/MultipleMake';
+import Make from './QuestionMakeList/Make';
+import MultipleMake from './QuestionMakeList/MultipleMake';
 
 function QuestionMakeList() {
     
