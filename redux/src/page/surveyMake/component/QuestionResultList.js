@@ -9,10 +9,10 @@ import RatingResult from '../../../component/surveyFormat/RatingResult';
 
 
 function QuestionResultList() {
-    const data = useSelector((state)=> state);
+    const data = useSelector((state)=>state.surveyMake.question);
     let list = NaN;
     if(data!==undefined){
-        list = data.question.map(
+        list = data.map(
             r => {
                 switch (r.type) {
                     case OBJECTIVE:

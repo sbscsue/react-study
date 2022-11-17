@@ -6,9 +6,10 @@ import {createStore} from "redux";
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {Provider,useSelector,useDispatch,connect} from 'react-redux';
 import reducer from "./page/surveyMake/reducer/action";
+import { store, surveyMakeSlice } from "./page/surveyMake/reducer/action2";
 
 
-const store = createStore(reducer,composeWithDevTools());
+//const store = createStore(surveyMakeSlice,composeWithDevTools());
 
 function App() {
   const [hello, setHello] = useState('')

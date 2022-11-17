@@ -7,10 +7,11 @@ import MultipleMake from '../../../component/surveyFormat/MultipleMake';
 
 function QuestionMakeList() {
     
-    const data = useSelector((state)=> state);
+    const data = useSelector((state)=>state.surveyMake.question);
+    console.log(data);
     let list = NaN;
-    if(data!==undefined){
-        list = data.question.map(
+    if(data.length!==0){
+        list = data.map(
             r => {
                 switch (r.type) {
                     case OBJECTIVE:

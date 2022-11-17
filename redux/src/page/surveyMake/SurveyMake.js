@@ -3,9 +3,17 @@ import {Provider,useSelector,useDispatch,connect} from 'react-redux';
 import QuestionMakeList from "./component/QuestionMakeList";
 import QuestionResultList from "./component/QuestionResultList";
 
-import {CREATE_OBJECTIVE, CREATE_MULTIPLE,CREATE_TRUEFALSE,CREATE_STAR,DELETE } from "./reducer/action";
-
 import axios from 'axios';
+import {  CREATE_OBJECTIVE,
+  CREATE_MULTIPLE,
+  UPDATE_MULTIPLE_CANMULTI,
+  UPDATE_MULTIPLE_CREATE_RESPONSE,
+  UPDATE_MULTIPLE_UPDATE_RESPONSE,
+  UPDATE_MULTIPLE_DELETE_RESPONSE,
+  CREATE_TRUEFALSE,
+  CREATE_STAR,
+  UPDATE_TITLE,
+  DELETE } from './reducer/action2';
 //style
 const tempStyle={
     display:"flex",

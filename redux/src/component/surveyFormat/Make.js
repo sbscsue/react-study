@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import { UPDATE_TITLE } from "../../page/surveyMake/reducer/action";
+import { UPDATE_TITLE } from '../../page/surveyMake/reducer/action2';
+
 import {useDispatch} from 'react-redux';
 
 const styles = {
