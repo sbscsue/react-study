@@ -13,8 +13,8 @@ import { CREATE_OBJECTIVE,
   DELETE }  from '../redux/slice/SurveyMakeSlice';
 
 
-import QuestionMakeList from '../component/Survey/QuestionMakeList';
-import QuestionResultList from '../component/Survey/QuestionResultList';
+import QuestionMakeList from '../components/Survey/QuestionMakeList';
+import QuestionResultList from '../components/Survey/QuestionResultList';
   
 
 
